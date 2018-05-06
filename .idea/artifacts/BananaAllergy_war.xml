@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="BananaAllergy:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/BananaAllergy_war</output-path>
+    <root id="archive" name="BananaAllergy_war.war">
+      <element id="artifact" artifact-name="BananaAllergy:war exploded" />
+    </root>
+  </artifact>
+</component>
