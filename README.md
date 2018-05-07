@@ -3,6 +3,6 @@
 ## 기능
 네이버 TV에서 바나나 알러지 원숭이의 영상을 가져와, 방송사 음악 프로그램에서 업로드 한 영상만 선별해냅니다.
 ## Library
-[jsoup](https://jsoup.org) © 2019 - 2018 Jonathan Hdeley.
+[jsoup](https://jsoup.org) © 2019 - 2018 [Jonathan Hedley](https://jhy.io).
 ## License
 MIT © [kentakang](http://kentakang.com)
