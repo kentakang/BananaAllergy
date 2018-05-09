@@ -15,7 +15,7 @@ public class ImageProcessor {
             String ext = imgSrc.substring(imgSrc.lastIndexOf('.') + 1, imgSrc.length());
             BufferedImage img = ImageIO.read(url);
 
-            ImageIO.write(img, ext, new File("../webapps/BananaAllergy/", imgFile));
+            ImageIO.write(img, ext, new File("../webapps/BananaAllergy/resource/images/", imgFile));
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -25,7 +25,7 @@ public class ImageProcessor {
 
     public static boolean checkImg(String imgSrc) {
         String imgFile = imgSrc.substring(imgSrc.lastIndexOf('/') + 1, imgSrc.length());
-        File img = new File("../webapps/BananaAllergy", imgFile);
+        File img = new File("../webapps/BananaAllergy/resource/images/", imgFile);
         boolean isExists = img.exists();
 
         return isExists;

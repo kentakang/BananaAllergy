@@ -93,3 +93,6 @@ target/
 
 
 # End of https://www.gitignore.io/api/java,java-web,intellij+iml
+
+# setting.json
+web/setting.json

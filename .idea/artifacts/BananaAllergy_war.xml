@@ -3,6 +3,13 @@
     <output-path>$PROJECT_DIR$/out/artifacts/BananaAllergy_war</output-path>
     <root id="archive" name="BananaAllergy_war.war">
       <element id="artifact" artifact-name="BananaAllergy:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="jsoup-1.11.3" />
+          <element id="library" level="project" name="postgresql-42.2.2" />
+          <element id="library" level="project" name="json-simple-1.1.1" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>

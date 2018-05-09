@@ -6,53 +6,8 @@
     <head>
         <title>BananaAllergy</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link rel="stylesheet" href="./resource/css/bootstrap.custom.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <style>
-            :root {
-                --jumbotron-padding-y: 3rem;
-            }
-
-            .jumbotron {
-                padding-top: var(--jumbotron-padding-y);
-                padding-bottom: var(--jumbotron-padding-y);
-                margin-bottom: 0;
-                background-color: #fff;
-            }
-            @media (min-width: 768px) {
-                .jumbotron {
-                    padding-top: calc(var(--jumbotron-padding-y) * 2);
-                    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
-                }
-            }
-
-            .jumbotron p:last-child {
-                margin-bottom: 0;
-            }
-
-            .jumbotron-heading {
-                font-weight: 300;
-            }
-
-            .jumbotron .container {
-                max-width: 40rem;
-            }
-
-            .card {
-                height: 22rem;
-            }
-
-            footer {
-                padding-top: 3rem;
-                padding-bottom: 3rem;
-                text-align: center;
-            }
-
-            footer p {
-                margin-bottom: .25rem;
-            }
-
-            .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
-        </style>
     </head>
     <body>
         <section class="jumbotron text-center">
@@ -67,6 +22,8 @@
                     <%
                         ListParser parser = new ListParser();
                         ImageProcessor img = new ImageProcessor();
+                        parser.dbInit();
+
                         ArrayList<String> list = parser.getList(false);
                         Iterator<String> it = list.iterator();
 
@@ -85,7 +42,7 @@
                     %>
                     <div class="col-md-4 text-center">
                         <div class="card mb-4 box-shadow">
-                            <a href="http://tv.naver.com<%=videoLink%>" target="_blank"><img class="card-img-top" src="<%=imgFile%>" alt="<%=title%>"></a>
+                            <a href="http://tv.naver.com<%=videoLink%>" target="_blank"><img class="card-img-top" src="./resource/images/<%=imgFile%>" alt="<%=title%>"></a>
                             <div class="card-body">
                                 <a href="http://tv.naver.com<%=videoLink%>" target="_blank"><h5 class="card-title"><%=title%></h5></a>
                                 <p class="card-text"><%=uploader%></p>
