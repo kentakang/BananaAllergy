@@ -12,10 +12,12 @@
 1. Release에서 최신 버전 .war 파일을 다운받아 주세요.
 2. 톰캣 서버의 webapps 디렉토리에 .war 파일을 넣어 주세요.
 3. 아래와 같이 setting.json 파일을 생성한 뒤 데이터베이스 설정을 해주세요.  
-    {
-        "dbUrl" : "jdbc:postgresql://localhost/DB명"
-        "username" : "PostgreSQL 사용자명"
-        "password" : "해당 사용자의 패스워드"
+'''
+{
+    "dbUrl" : "jdbc:postgresql://localhost/DB명"
+    "username" : "PostgreSQL 사용자명"
+    "password" : "해당 사용자의 패스워드"
 }
+'''
 ## License
 MIT © [kentakang](http://kentakang.com)
