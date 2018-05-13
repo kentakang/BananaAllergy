@@ -70,7 +70,6 @@ public class ListParser {
         Document document = Jsoup.connect(url).get();
         Elements endBtn = document.select(".next_end");
         int endPage = Integer.parseInt(endBtn.attr("data-page"));
-        ArrayList<String> resultList = new ArrayList<>();
 
         for (int i = 1; i <= endPage; i++) {
             Document searchResult = Jsoup.connect(
@@ -92,7 +91,6 @@ public class ListParser {
                             }
                         }
 
-                        resultList.add(uploader + "," + title + "," + imgSrc + "," + videoLink);
                         try {
                             Connection conn = DriverManager.getConnection(dbUrl, user, password);
                             Statement st = conn.createStatement();
@@ -120,7 +118,7 @@ public class ListParser {
             }
         }
 
-        return resultList;
+        return getList(getFancam);
     }
 
     public ArrayList<String> getList(boolean getFancam) throws IOException {

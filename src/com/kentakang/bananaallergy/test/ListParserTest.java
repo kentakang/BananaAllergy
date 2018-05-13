@@ -4,6 +4,8 @@ import com.kentakang.bananaallergy.ListParser;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -26,7 +28,8 @@ class ListParserTest {
         parser.dbInit();
 
         try {
-            assertNotNull(parser.getListFromWeb(false));
+            ArrayList<String> list = parser.getListFromWeb(false);
+            assertNotNull(list);
         } catch (IOException e) {
             fail(e);
         }
