@@ -6,7 +6,7 @@
 [JAX-WS-Apache Axis](https://axis.apache.org/axis2/java/core/index.html) [The Apache Software Foundation](http://www.apache.org).  
 [json-simple](https://code.google.com/archive/p/json-simple/) Yidong Fang.  
 [PostgreSQL JDBC Driver](https://jdbc.postgresql.org/) PostgreSQL Global Development Group.  
-[jsoup](https://jsoup.org) © 2019 - 2018 [Jonathan Hedley](https://jhy.io).
+[jsoup](https://jsoup.org) © 2009 - 2018 [Jonathan Hedley](https://jhy.io).
 ## 설치 방법
 **BananaAllergy는 PostgreSQL 데이터베이스를 사용합니다. 서버에 PostgreSQL 서버가 설치되어 있어야 사용할 수 있습니다.**
 1. Release에서 최신 버전 .war 파일을 다운받아 주세요.
